@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nudge – User guide</title>
+  <meta name="description" content="How to use Nudge: Reminders & Follow-ups for Jira.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="../">Nudge4</a>
+    <nav><a href="./">Guide</a><a href="privacy.html">Privacy</a><a href="mailto:nudge4.support@gmail.com">Support</a></nav>
+  </header>
+  <main>
+    <h1>Nudge: Reminders &amp; Follow-ups for Jira</h1>
+    <p class="lead">Jira has no built-in way to say "remind me about this later". Nudge adds it: remind yourself or your team about any work item, at the right time, with zero setup.</p>
+
+    <h2>Set a reminder</h2>
+    <ol>
+      <li>Open any work item. In the right-hand panel, open <strong>Reminders</strong>.</li>
+      <li>Click <strong>New reminder</strong>.</li>
+      <li><strong>When:</strong> choose a preset (In 1 hour, Tomorrow at 9:00, In 3 days at 9:00, Next Monday at 9:00) or <strong>Pick a date and time</strong>. Times use your Jira time zone (profile → Personal settings).</li>
+      <li><strong>Who:</strong> Me, Assignee (whoever is assigned when the reminder fires), Watchers, and/or up to 20 people.</li>
+      <li>Optionally add a <strong>message</strong> and choose a <strong>repeat</strong>: every day, every weekday, every week or every month.</li>
+      <li>Leave <strong>Stop when the work item is resolved</strong> on to stop automatically once the work is done.</li>
+      <li>Click <strong>Set reminder</strong>.</li>
+    </ol>
+    <p class="muted">Reminders are checked every 5 minutes, so an email arrives within about 5 minutes of the chosen time.</p>
+
+    <h2>See and manage your reminders</h2>
+    <ul>
+      <li>The <strong>Reminders</strong> panel on a work item shows reminders you created or receive for that item.</li>
+      <li><strong>Apps → My reminders</strong> shows every reminder you created or receive, with 30 days of history.</li>
+      <li>Only the person who created a reminder can delete it.</li>
+    </ul>
+
+    <h2>For Jira admins</h2>
+    <p><strong>Jira settings → Apps → Reminders settings:</strong> untick projects where reminders should be off.</p>
+
+    <h2>FAQ</h2>
+    <h3>Who can receive a reminder?</h3>
+    <p>Only people who can see the work item. Jira checks permissions when sending.</p>
+    <h3>Why didn't a reminder send?</h3>
+    <p>It stops when the work item is resolved (if that option is on) or deleted. It's marked Failed if Jira rejects it 3 times in a row.</p>
+    <h3>Does data leave Atlassian?</h3>
+    <p>No. Nudge runs on Atlassian Forge with no external servers, and emails are sent by Jira itself. See the <a href="privacy.html">privacy policy</a>.</p>
+
+    <h2>Support</h2>
+    <p>Email <a href="mailto:nudge4.support@gmail.com">nudge4.support@gmail.com</a>. We aim to reply within 2 business days.</p>
+  </main>
+  <footer>© 2026 Nudge4 · <a href="privacy.html">Privacy policy</a></footer>
+</body>
+</html>
