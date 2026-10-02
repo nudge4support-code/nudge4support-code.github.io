@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Owed – Privacy policy</title>
+  <meta name="description" content="Privacy policy for Owed: Net Terms &amp; Collections, a Shopify app by Nudge4.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="../">Nudge4</a>
+    <nav><a href="./">Guide</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+  </header>
+  <main>
+    <h1>Privacy policy</h1>
+    <p class="muted">Owed: Net Terms &amp; Collections · Last updated: 3 October 2026</p>
+    <p>This policy explains what data the Owed app ("the app"), published by Nudge4 ("we", "us"), handles when a merchant installs it on a Shopify store. The merchant is the controller of their customers' data. We process it only on the merchant's instructions to provide the app.</p>
+
+    <h2>Data the app reads from Shopify</h2>
+    <p>With the permissions the merchant approves at installation, the app reads from Shopify:</p>
+    <ul>
+      <li>unpaid orders (order number, dates, amounts, outstanding balance, PO number and payment terms)</li>
+      <li>the B2B company or customer each order belongs to (company or customer name)</li>
+      <li>the email address on the order, so reminders can be sent</li>
+      <li>the store's name, contact email, address, currency and time zone, for statements and dates</li>
+      <li>fulfillment orders of newly created orders, so the overdue guard can place a hold</li>
+    </ul>
+    <p>This information is read live from Shopify each time a page is opened or a reminder is due. <strong>The app does not store customers' names, email addresses, addresses or order contents.</strong></p>
+
+    <h2>Data the app stores</h2>
+    <ul>
+      <li>The store's domain and the access token Shopify issues to the app (needed to call Shopify's API).</li>
+      <li>The merchant's settings (reminder schedule, message text, guard settings).</li>
+      <li>A reminder log: Shopify order ID, due date, schedule step, status and time. This prevents duplicate reminders.</li>
+      <li>A hold log: Shopify order and fulfillment order IDs, account ID and days overdue for holds the app placed.</li>
+      <li>Basic usage events without personal data (for example "statement downloaded").</li>
+    </ul>
+
+    <h2>How data is used</h2>
+    <p>Only to provide the app's features: showing balances and aging, generating statements, sending payment reminders, placing fulfillment holds and recording payments. Reminder emails are sent by Shopify (the order invoice email) from the merchant's store. We don't sell data, use it for advertising, or share it with third parties, except the service providers below.</p>
+
+    <h2>Where data is processed</h2>
+    <ul>
+      <li><strong>Shopify</strong>: the source of all store data, and the sender of reminder emails.</li>
+      <li><strong>Render</strong> (Render Services, Inc.): hosts the app server and its PostgreSQL database in the United States. All connections use HTTPS/TLS.</li>
+    </ul>
+
+    <h2>Retention and deletion</h2>
+    <ul>
+      <li>When the app is uninstalled, all data stored for the store is deleted immediately. Shopify's <code>shop/redact</code> request is also honoured.</li>
+      <li>When Shopify sends a <code>customers/redact</code> request, reminder and hold log entries for that customer's orders are deleted.</li>
+      <li>For <code>customers/data_request</code>: the app stores no personal customer data beyond Shopify order IDs, which the merchant already has in Shopify.</li>
+    </ul>
+
+    <h2>Security</h2>
+    <p>Access to the hosting account and database is limited to the developer and protected with strong passwords and two-factor authentication. Secrets are kept in the host's encrypted environment settings, never in source code. The app requests only the Shopify permissions its features need.</p>
+
+    <h2>Your rights</h2>
+    <p>Merchants can request access to or deletion of their store's data by emailing us. Customers of a merchant should contact that merchant, who controls their data. We'll help the merchant respond.</p>
+
+    <h2>Changes</h2>
+    <p>We'll update this page if the app's data handling changes, and change the date above.</p>
+
+    <h2>Contact</h2>
+    <p>Nudge4 · Email: nudge4.support@gmail.com · <a href="support.html">Support page</a></p>
+  </main>
+  <footer>© 2026 Nudge4 · <a href="./">Guide</a> · <a href="support.html">Support</a></footer>
+</body>
+</html>
