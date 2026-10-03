@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B2B Autopilot – Privacy policy</title>
+  <meta name="description" content="Privacy policy for B2B Autopilot: Tiers &amp; Terms, a Shopify app by Nudge4.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="../">Nudge4</a>
+    <nav><a href="./">Guide</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+  </header>
+  <main>
+    <h1>Privacy policy</h1>
+    <p class="muted">B2B Autopilot: Tiers &amp; Terms · Last updated: 3 October 2026</p>
+    <p>This policy explains what data the B2B Autopilot app ("the app"), published by Nudge4 ("we", "us"), handles when a merchant installs it on a Shopify store.</p>
+
+    <h2>Data the app reads from Shopify</h2>
+    <p>With the permissions the merchant approves at installation, the app reads:</p>
+    <ul>
+      <li>B2B companies and company locations: names, creation dates, the country code of the location's address, and one company field (metafield) the merchant chooses for matching</li>
+      <li>B2B markets and which company locations belong to them</li>
+      <li>the store's payment terms templates and its company metafield definitions</li>
+    </ul>
+    <p><strong>The app does not request or store any customer personal data</strong>: no customer or contact names, email addresses, phone numbers or street addresses. It does not read orders.</p>
+
+    <h2>What the app changes in Shopify</h2>
+    <p>Only what the merchant configures: it adds or removes company locations in the merchant's B2B markets, creates a B2B market when asked, and sets a location's payment terms, draft-order review setting and tax exemption.</p>
+
+    <h2>Data the app stores</h2>
+    <ul>
+      <li>The store's domain and the access token Shopify issues to the app (needed to call Shopify's API).</li>
+      <li>The merchant's settings and tiers (tier names, linked market IDs, matching values, chosen defaults).</li>
+      <li>An activity log of tier changes: Shopify company location ID, tier names, source and time, kept for 90 days. Names are looked up live from Shopify when shown, not stored.</li>
+      <li>Basic usage events without personal data (for example "tier created").</li>
+    </ul>
+
+    <h2>How data is used</h2>
+    <p>Only to provide the app's features. We don't sell data, use it for advertising, or share it with third parties, except the service providers below.</p>
+
+    <h2>Where data is processed</h2>
+    <ul>
+      <li><strong>Shopify</strong>: the source of all store data.</li>
+      <li><strong>Render</strong> (Render Services, Inc.): hosts the app server and its PostgreSQL database in the United States. All connections use HTTPS/TLS.</li>
+    </ul>
+
+    <h2>Retention and deletion</h2>
+    <ul>
+      <li>When the app is uninstalled, all data stored for the store is deleted immediately. Shopify's <code>shop/redact</code> request is also honoured.</li>
+      <li><code>customers/data_request</code> and <code>customers/redact</code>: the app stores no customer data, so there is nothing to return or erase.</li>
+    </ul>
+
+    <h2>Security</h2>
+    <p>Access to the hosting account and database is limited to the developer and protected with strong passwords and two-factor authentication. Secrets are kept in the host's encrypted environment settings, never in source code. The app requests only the Shopify permissions its features need.</p>
+
+    <h2>Your rights</h2>
+    <p>Merchants can request access to or deletion of their store's data by emailing us.</p>
+
+    <h2>Changes</h2>
+    <p>We'll update this page if the app's data handling changes, and change the date above.</p>
+
+    <h2>Contact</h2>
+    <p>Nudge4 · Email: nudge4.support@gmail.com · <a href="support.html">Support page</a></p>
+  </main>
+  <footer>© 2026 Nudge4 · <a href="./">Guide</a> · <a href="support.html">Support</a></footer>
+</body>
+</html>
