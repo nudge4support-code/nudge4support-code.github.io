@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B2B Everywhere – Privacy policy</title>
+  <meta name="description" content="Privacy policy for B2B Everywhere, a Shopify app by Nudge4.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="../">Nudge4</a>
+    <nav><a href="./">Guide</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+  </header>
+  <main>
+    <h1>Privacy policy</h1>
+    <p class="muted">B2B Everywhere · Last updated: 4 October 2026</p>
+    <p>This policy explains what data the B2B Everywhere app ("the app"), published by Nudge4 ("we", "us"), handles when a merchant installs it on a Shopify store.</p>
+
+    <h2>How the app works</h2>
+    <p>The app runs entirely inside Shopify: its settings page runs in the merchant's browser inside Shopify admin, its checkout rules run as Shopify Functions on Shopify's servers, and its POS tile runs in the Shopify POS app. <strong>We do not operate a database and do not store store data, customer data or order data on our own systems.</strong></p>
+
+    <h2>Data the app reads from Shopify</h2>
+    <ul>
+      <li>B2B companies and company locations (names and IDs) and the app's own fields on them (credit hold, minimum order value).</li>
+      <li>In POS, for the customer in the cart: which B2B companies and locations the customer is a contact of. The app does not read customer names, email addresses, phone numbers or addresses.</li>
+      <li>Product variant prices for a company location (catalog and volume pricing).</li>
+      <li>During checkout (inside Shopify Functions): the cart subtotal, quantities, PO number, whether the buyer is buying for a company, product tags and available payment method names. This data is processed by Shopify and is not sent to us.</li>
+    </ul>
+
+    <h2>What the app changes in Shopify</h2>
+    <p>Only what the merchant configures: it creates the app's checkout validation and payment customization, saves the app's settings and two fields (credit hold on companies, minimum order value on company locations), and in POS applies line-item discounts and order attributes naming the company.</p>
+
+    <h2>Data stored</h2>
+    <p>The app's settings and fields are stored in the merchant's own Shopify store (as metafields). We store nothing else.</p>
+
+    <h2>Service providers</h2>
+    <ul>
+      <li><strong>Shopify</strong>: the source of all store data and where the app runs.</li>
+      <li><strong>GitHub Pages</strong> (GitHub, Inc.): serves the settings page's static files. No store data passes through it.</li>
+      <li><strong>Cloudflare Workers</strong> (Cloudflare, Inc.): receives Shopify's mandatory privacy webhooks and confirms them. Their contents are not stored.</li>
+    </ul>
+
+    <h2>Retention and deletion</h2>
+    <ul>
+      <li>We hold no store or customer data, so <code>customers/data_request</code>, <code>customers/redact</code> and <code>shop/redact</code> requests have nothing to return or erase. They are acknowledged.</li>
+      <li>On uninstall, Shopify removes the app's checkout rules and POS tile. The app's fields stay in the store until the merchant deletes them in Settings › Custom data.</li>
+    </ul>
+
+    <h2>How data is used</h2>
+    <p>Only to provide the app's features. We don't sell data, use it for advertising, or share it with third parties.</p>
+
+    <h2>Contact</h2>
+    <p>Nudge4 · Email: nudge4.support@gmail.com · <a href="support.html">Support page</a></p>
+  </main>
+  <footer>© 2026 Nudge4 · <a href="./">Guide</a> · <a href="support.html">Support</a></footer>
+</body>
+</html>

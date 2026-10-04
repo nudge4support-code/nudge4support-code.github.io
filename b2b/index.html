@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B2B Everywhere – B2B prices in POS and B2B checkout rules for Shopify</title>
+  <meta name="description" content="B2B Everywhere applies Shopify B2B catalog prices in Shopify POS and adds B2B checkout rules: minimum orders, required PO numbers, B2B-only products and credit hold.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="../">Nudge4</a>
+    <nav><a href="./">Guide</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+  </header>
+  <main>
+    <h1>B2B Everywhere: POS prices &amp; checkout rules</h1>
+    <p class="lead">For Shopify merchants who sell wholesale with Shopify's native B2B. Your company prices work at the counter, and your wholesale rules hold at checkout.</p>
+
+    <h2>Why</h2>
+    <ul>
+      <li>Shopify POS doesn't apply B2B catalog prices. When a trade customer walks in, staff look up prices by hand or build a draft order in the admin (and loading drafts in POS needs POS Pro).</li>
+      <li>Native B2B has no minimum order value, no way to require a PO number, and no way to stop a company that's behind on payments from ordering again.</li>
+    </ul>
+
+    <h2>What it does</h2>
+    <ul>
+      <li><strong>B2B prices in POS (Pro):</strong> add a B2B customer to the cart, tap the <em>B2B prices</em> tile, and each line drops to that company location's catalog price, including volume price breaks. The company is recorded on the order (order attributes <code>_b2b_company</code> and <code>_b2b_company_location</code>).</li>
+      <li><strong>Minimum order:</strong> a minimum order value and/or number of items for business buyers, with a different minimum per company location if you need it.</li>
+      <li><strong>PO number:</strong> business buyers must enter a purchase order number to place an order.</li>
+      <li><strong>B2B-only products:</strong> products tagged <code>b2b-only</code> can only be bought by business buyers.</li>
+      <li><strong>Credit hold (Pro):</strong> put a company on hold to block its checkouts, or to let it order but send the order to you for review.</li>
+      <li><strong>Payment rules (Pro):</strong> hide payment methods (for example Cash on Delivery) from business buyers or from retail buyers, and send large B2B orders for review.</li>
+    </ul>
+    <p>Everything runs inside Shopify (Shopify Functions and POS extensions). The app has no server of its own and stores your settings in your store.</p>
+
+    <h2>Getting started</h2>
+    <ol>
+      <li>Open the app and click <strong>Turn on</strong> next to <em>Checkout rules for business buyers</em> (and, on Pro, <em>Payment rules and order review</em>).</li>
+      <li>Set your minimum order, PO number and B2B-only options, then click <strong>Save settings</strong>.</li>
+      <li>Optional: on a company location page in Shopify admin, fill in <em>Minimum order value</em> to override the default for that location.</li>
+      <li>Credit hold: switch it on in the app's <em>Companies</em> list, or set the <em>Credit hold</em> field on the company page.</li>
+      <li>POS: on the POS home screen tap <em>Edit</em> and add the <em>B2B prices</em> tile.</li>
+    </ol>
+
+    <h2>Plans</h2>
+    <ul>
+      <li><strong>Free:</strong> minimum order value and items, required PO number, B2B-only products.</li>
+      <li><strong>Pro, $14.99 / month:</strong> everything in Free, plus B2B prices in POS, credit hold, payment rules and order review.</li>
+    </ul>
+    <p>Pro has a 14-day free trial and is billed by Shopify. Change or cancel at any time from the app.</p>
+
+    <h2>FAQ</h2>
+    <h3>Which Shopify plans does it work on?</h3>
+    <p>Any plan with Shopify B2B (Basic, Grow, Advanced and Plus). Shopify Functions from public apps work on all plans.</p>
+    <h3>Where do the POS prices come from?</h3>
+    <p>From Shopify itself: the catalog and volume pricing assigned to the company location. The app never keeps its own price list, so prices can't drift.</p>
+    <h3>What does a buyer see when a rule blocks checkout?</h3>
+    <p>A clear message at checkout, for example "Your business account has a minimum order of 200.00. Add 150.00 more to check out." You can write your own minimum-order and credit-hold messages.</p>
+    <h3>Do the rules affect retail customers?</h3>
+    <p>No. Minimums, PO numbers and credit hold only apply when a buyer checks out for a B2B company. Only the B2B-only rule and "hide for retail buyers" act on retail buyers.</p>
+    <h3>What happens if I uninstall?</h3>
+    <p>Shopify removes the app's checkout rules and POS tile. Your companies, catalogs and orders are not changed. See the <a href="privacy.html">privacy policy</a>.</p>
+  </main>
+  <footer>© 2026 Nudge4 · <a href="./">Guide</a> · <a href="support.html">Support</a></footer>
+</body>
+</html>
