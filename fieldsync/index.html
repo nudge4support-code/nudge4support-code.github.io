@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Field Sync and Rollups for Zoho CRM: Guide</title>
+  <meta name="description" content="Guide for Field Sync and Rollups for Zoho CRM: no-code rules that copy fields between related records and roll up totals, for every edition and custom modules.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="../">Nudge4</a>
+    <nav><a href="./">Guide</a><a href="faq.html">FAQ</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  </header>
+  <main>
+    <h1>Field Sync and Rollups for Zoho CRM</h1>
+    <p class="lead">Keep related records in sync and roll up totals onto parent records, with no code, on every Zoho CRM edition. Everything runs inside your own Zoho CRM. No data leaves Zoho.</p>
+
+    <h2>How it works</h2>
+    <p>After install you will see a <strong>Sync Rules</strong> tab (it may be under the "…" menu in the top bar). Each record in it is one rule. Rules run automatically when an Account, Contact or Deal is created or edited, right after you save a rule (so existing records are covered), and once a day.</p>
+
+    <h2>Create a Copy Fields rule</h2>
+    <p>Example: copy Account Billing City to every Contact's Mailing City.</p>
+    <table>
+      <tr><th>Field</th><th>Value</th></tr>
+      <tr><td>Rule Type</td><td>Copy Fields</td></tr>
+      <tr><td>Parent Module</td><td>Accounts</td></tr>
+      <tr><td>Child Module</td><td>Contacts</td></tr>
+      <tr><td>Lookup Field</td><td>Account_Name (the field on the child that points to the parent)</td></tr>
+      <tr><td>Source Field</td><td>Billing_City (on the parent; several allowed, comma-separated)</td></tr>
+      <tr><td>Target Field</td><td>Mailing_City (on the child, in the same order as Source)</td></tr>
+      <tr><td>Active</td><td>ticked</td></tr>
+    </table>
+
+    <h2>Create a Rollup rule</h2>
+    <p>Example: total of Closed Won deals on each Account.</p>
+    <table>
+      <tr><th>Field</th><th>Value</th></tr>
+      <tr><td>Rule Type</td><td>Rollup</td></tr>
+      <tr><td>Parent Module</td><td>Accounts</td></tr>
+      <tr><td>Child Module</td><td>Deals</td></tr>
+      <tr><td>Lookup Field</td><td>Account_Name</td></tr>
+      <tr><td>Source Field</td><td>Amount (the child field to aggregate; leave empty for Count)</td></tr>
+      <tr><td>Target Field</td><td>your Account field, for example Annual_Revenue or a custom field</td></tr>
+      <tr><td>Operation</td><td>Sum, Count, Minimum, Maximum, Average or Latest Date</td></tr>
+      <tr><td>Filter Field / Filter Value</td><td>Stage / Closed Won (optional)</td></tr>
+    </table>
+
+    <h2>Field names</h2>
+    <p>Use <strong>API names</strong>, not labels. Find them in Setup → Developer Hub → APIs → API names, or in Setup → Modules and Fields → (module) → field.</p>
+
+    <h2>Custom modules</h2>
+    <p>For a custom module, also fill in <strong>Related List</strong> with the API name of the related list on the parent that shows the children. Custom modules are updated when a rule is saved and in the daily recalculation.</p>
+
+    <h2>Limits</h2>
+    <ul>
+      <li>Up to 1,000 child records per parent in real time, and up to 2,000 parents per module in each recalculation.</li>
+      <li>Updates made by the extension do not trigger other workflows, which prevents loops.</li>
+      <li>Each rule's <strong>Last Run</strong> and <strong>Last Result</strong> fields show when it last ran.</li>
+    </ul>
+
+    <h2>Support</h2>
+    <p>Email <a href="mailto:nudge4.support@gmail.com">nudge4.support@gmail.com</a>. We reply within 2 business days.</p>
+  </main>
+  <footer>© 2026 Nudge4 · <a href="./">Guide</a> · <a href="faq.html">FAQ</a> · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms</a></footer>
+</body>
+</html>
