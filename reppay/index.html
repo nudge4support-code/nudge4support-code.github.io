@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RepPay – B2B sales rep commissions for Shopify</title>
+  <meta name="description" content="RepPay calculates sales rep commissions on paid Shopify B2B orders: assign reps to companies, set rates, see monthly totals and mark commissions as paid.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="../">Nudge4</a>
+    <nav><a href="./">Guide</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+  </header>
+  <main>
+    <h1>RepPay: B2B sales rep commissions</h1>
+    <p class="lead">For Shopify merchants who sell wholesale with Shopify's native B2B and pay sales reps or agents a commission.</p>
+
+    <h2>Why</h2>
+    <ul>
+      <li>Shopify B2B has no way to say which sales rep looks after which company, or what they've earned.</li>
+      <li>On net terms (Net 30/60), the order and the payment happen in different months. Paying commission on unpaid invoices costs you money; tracking it in a spreadsheet costs you hours.</li>
+    </ul>
+
+    <h2>What it does</h2>
+    <ul>
+      <li><strong>Sales reps:</strong> add your reps with a default commission %.</li>
+      <li><strong>Companies:</strong> assign each B2B company to a rep, with an optional rate just for that company. The rep is also a field on the company page in Shopify admin.</li>
+      <li><strong>Commissions on paid orders:</strong> each month, RepPay adds up every rep's B2B orders that were <em>fully paid</em> that month. Commission is on the order subtotal after discounts and returns (no shipping or tax).</li>
+      <li><strong>Mark as paid:</strong> record when you paid each rep for a month, with an undo.</li>
+      <li><strong>Statements (Pro):</strong> download the month's orders and commissions as a CSV for payroll or your accountant.</li>
+      <li><strong>Unassigned check:</strong> see paid B2B orders from companies that have no rep yet.</li>
+    </ul>
+    <p>Everything is stored in your own Shopify store. RepPay has no database of its own.</p>
+
+    <h2>Getting started</h2>
+    <ol>
+      <li>Open RepPay and go to <strong>Sales reps</strong>. Add each rep with their commission %.</li>
+      <li>Go to <strong>Companies</strong>. Pick a rep for each company (and a rate override if a company has a special deal), then click <strong>Save</strong>.</li>
+      <li>Go to <strong>Commissions</strong>. Use the month buttons to see what each rep earned. Click a rep's name to see the orders. When you've paid a rep, click <strong>Mark as paid</strong>.</li>
+    </ol>
+
+    <h2>Plans</h2>
+    <ul>
+      <li><strong>Free:</strong> up to 2 active sales reps, all commission features.</li>
+      <li><strong>Pro, $19.99 / month:</strong> unlimited sales reps and CSV statements.</li>
+    </ul>
+    <p>Pro has a 14-day free trial and is billed by Shopify. Change or cancel at any time from the app.</p>
+
+    <h2>FAQ</h2>
+    <h3>Which orders count?</h3>
+    <p>B2B orders (orders placed for a company) that are fully paid. An order counts in the month of its last successful payment, in your store's time zone, so a Net 30 order placed in March and paid in April counts in April.</p>
+    <h3>What amount is the commission based on?</h3>
+    <p>The order's current subtotal: line items after discounts, minus anything refunded or removed. Shipping and taxes are not included.</p>
+    <h3>Can a company have its own rate?</h3>
+    <p>Yes. Set a rate override on the company in the Companies tab. It replaces the rep's default rate for that company's orders.</p>
+    <h3>How far back can I look?</h3>
+    <p>Shopify lets apps read the last 60 days of orders, so you can see the current and previous month. Download a statement each month if you need a longer history.</p>
+    <h3>What happens if I uninstall?</h3>
+    <p>Shopify removes the app. Your reps and payout records are app data and are removed with it; your companies and orders are not changed. See the <a href="privacy.html">privacy policy</a>.</p>
+  </main>
+  <footer>© 2026 Nudge4 · <a href="./">Guide</a> · <a href="support.html">Support</a></footer>
+</body>
+</html>
