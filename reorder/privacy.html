@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reorder Nudge – Privacy policy</title>
+  <meta name="description" content="Privacy policy for Reorder Nudge, a Shopify app by Nudge4.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="../">Nudge4</a>
+    <nav><a href="./">Guide</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+  </header>
+  <main>
+    <h1>Privacy policy</h1>
+    <p class="muted">Reorder Nudge · Last updated: 18 October 2026</p>
+    <p>This policy explains what data the Reorder Nudge app ("the app"), published by Nudge4 ("we", "us"), handles when a merchant installs it on a Shopify store.</p>
+
+    <h2>Data the app reads from Shopify</h2>
+    <ul>
+      <li>B2B orders: order number, date, total, the purchasing company, company location and company contact (as IDs and company/location names), and the line items of a location's last order.</li>
+      <li>The app's own settings and fields (reorder interval, pause) and the store's time zone and plan.</li>
+    </ul>
+    <p>The app does not read customer names, email addresses, phone numbers or addresses. Reorder emails are addressed and sent by Shopify (draft order invoices).</p>
+
+    <h2>Data we store</h2>
+    <ul>
+      <li>The store's domain and an access token issued by Shopify, so automatic reminders can run while the merchant is away.</li>
+      <li>A send log: company location ID, order ID of the cycle, draft order ID, date and whether it was manual or automatic.</li>
+    </ul>
+    <p>This is stored in a Cloudflare D1 database. Settings live in the merchant's own Shopify store (metafields).</p>
+
+    <h2>Service providers</h2>
+    <ul>
+      <li><strong>Shopify</strong>: the source of store data; sends the reorder emails.</li>
+      <li><strong>Cloudflare</strong> (Workers, D1): runs the app's server code and stores the data listed above.</li>
+      <li><strong>GitHub Pages</strong>: serves the app page's static files. No store data passes through it.</li>
+    </ul>
+
+    <h2>Retention and deletion</h2>
+    <ul>
+      <li>On uninstall (and on Shopify's <code>shop/redact</code> request) we delete the store's token and send log.</li>
+      <li>We hold no customer personal data, so <code>customers/data_request</code> and <code>customers/redact</code> requests have nothing to return or erase. They are acknowledged.</li>
+    </ul>
+
+    <h2>How data is used</h2>
+    <p>Only to provide the app's features. We don't sell data, use it for advertising, or share it with third parties.</p>
+
+    <h2>Contact</h2>
+    <p>Nudge4 · Email: nudge4.support@gmail.com · <a href="support.html">Support page</a></p>
+  </main>
+  <footer>© 2026 Nudge4 · <a href="./">Guide</a> · <a href="support.html">Support</a></footer>
+</body>
+</html>
